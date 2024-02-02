@@ -1,10 +1,10 @@
-const {Circle, Square, Triangle} = require('../Lib/shape.js');
+const { Circle, Square, Triangle } = require('./Lib/shape');
 
 describe('Circle', () => {
     test("circle should be a purple circle", () => {
-        const testCirle = `<circle cx="100" cy="100" r="50" fill="purple" />`;
+        const testCirle = `<circle cx="150" cy="100" r="80" fill="green" />`;
         const circle = new Circle();
-        circle.setColor('purple');
+        circle.setColor('green');
         const actualCircle = circle.render();
         expect(actualCircle).toEqual(testCirle);
     })
@@ -12,9 +12,9 @@ describe('Circle', () => {
 
 describe('Square', () => {
     test("square should be a red square", () => {
-        const testSquare = `<rect x="50" y="50" width="100" height="100" fill="red" />`;
+        const testSquare = `<rect x="90" y="40" width="130" height="110" fill="yellow" />`;
         const square = new Square();
-        square.setColor('red');
+        square.setColor('yellow');
         const actualSquare = square.render();
         expect(actualSquare).toEqual(testSquare);
     })
@@ -22,9 +22,9 @@ describe('Square', () => {
 
 describe('Triangle', () => {
     test("triangle should be a green triangle", () => {
-        const testTriangle = `<polygon points="100,50 50,100 150,100" fill="green" />`;
+        const testTriangle = `<polygon points="150,18 244,182 56,182" fill="purple" />`;
         const triangle = new Triangle();
-        triangle.setColor('green');
+        triangle.setColor('purple');
         const actualTriangle = triangle.render();
         expect(actualTriangle).toEqual(testTriangle);
     })

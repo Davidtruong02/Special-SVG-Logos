@@ -1,17 +1,24 @@
 // Imported inquirer package and file system package and shape modules
 const inquirer = require('inquirer');
 const fs = require('fs');
-const { Circle, Square, Triangle } = require('./lib/shape');
-const SVG = require('./lib/svg');
+const { Circle, Square, Triangle } = require('./Lib/shape');
+const SVG = require('./Lib/svg');
 
 inquirer
     .prompt ([
         {
             type: 'input',
             name: 'userText',
-            message: 'Please enter 3 characters to display in your logo:'
-
+            message: 'Please enter 3 characters to display in your logo:',
+            validate: function (value) {
+                if (value.length === 3) {
+                    return true;
+                } else {
+                    return 'Please enter 3 characters';
+                }
+            }
         },
+    
         {
             type: 'input',
             name: 'textColor',
@@ -42,7 +49,7 @@ inquirer
             userShape = new Triangle();
         }
 
-    shape.setColor(response.shapeColor);
+    userShape.setColor(response.shapeColor);
 
     const Svg = new SVG();
 
