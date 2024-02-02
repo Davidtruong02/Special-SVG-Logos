@@ -18,7 +18,7 @@ class Circle extends Shape {
 }
 
 // Rectangle class is a subclass of Shape
-class Rectangle extends Shape {
+class Square extends Shape {
     render(){
         return `<rect x="50" y="50" width="100" height="100" fill="${this.color}" />`;
     }
@@ -31,4 +31,4 @@ class Triangle extends Shape {
 }
 
 // Export the classes
-module.exports = { Circle, Rectangle, Triangle };
+module.exports = { Circle, Square, Triangle };
