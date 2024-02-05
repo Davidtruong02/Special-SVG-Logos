@@ -10,7 +10,7 @@ class SVG {
 }
 
     setText(userText, userColor){
-        this.text = `<text x="150" y="110" font-size="40" text-anchor="middle" fill="${userColor}">${userText}</text>`;
+        this.text = `<text x="150" y="120" font-size="40" text-anchor="middle" fill="${userColor}">${userText}</text>`;
 }
 
 
