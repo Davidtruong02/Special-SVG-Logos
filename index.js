@@ -22,7 +22,7 @@ inquirer
         {
             type: 'input',
             name: 'textColor',
-            message: 'Please enter the color for your text:'
+            message: 'Please enter the color or hexadecimal for your text:'
         },
         {
             type: 'list',
@@ -33,8 +33,8 @@ inquirer
         {
             type: 'input',
             name: 'shapeColor',
-            message: 'Please enter the color for your shape:'
-        }
+            message: 'Please enter the color or hexadecimal for your shape:'
+        } 
     ])
 
     .then((response) => {
