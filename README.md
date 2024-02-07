@@ -17,7 +17,7 @@ The logo.svg file will be generated
 In the terminal, type npm test
 
 ## User Story
-```md
+```
 AS a freelance web developer
 I WANT to generate a simple logo for my projects
 SO THAT I don't have to pay a graphic designer
@@ -39,7 +39,7 @@ THEN an SVG file is created named `logo.svg`
 AND the output text "Generated logo.svg" is printed in the command line
 WHEN I open the `logo.svg` file in a browser
 THEN I am shown a 300x200 pixel image that matches the criteria I entered
-`` md
+```
 
 
 ## Mock Up
