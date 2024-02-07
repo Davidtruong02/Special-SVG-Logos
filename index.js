@@ -5,7 +5,7 @@ const { Circle, Square, Triangle } = require('./Lib/shape');
 const SVG = require('./Lib/svg');
 
 inquirer
-    .prompt ([
+    .prompt([
         {
             type: 'input',
             name: 'userText',
@@ -18,7 +18,7 @@ inquirer
                 }
             }
         },
-    
+
         {
             type: 'input',
             name: 'textColor',
@@ -34,7 +34,7 @@ inquirer
             type: 'input',
             name: 'shapeColor',
             message: 'Please enter the color or hexadecimal for your shape:'
-        } 
+        }
     ])
 
     .then((response) => {
@@ -49,12 +49,12 @@ inquirer
             userShape = new Triangle();
         }
 
-    userShape.setColor(response.shapeColor);
+        userShape.setColor(response.shapeColor);
 
-    const Svg = new SVG();
+        const Svg = new SVG();
 
-    Svg.setText(response.userText, response.textColor);
-    Svg.setShape(userShape);
-    fs.writeFileSync('logo.svg', Svg.render());
-    
+        Svg.setText(response.userText, response.textColor);
+        Svg.setShape(userShape);
+        fs.writeFileSync('logo.svg', Svg.render());
+
     });
