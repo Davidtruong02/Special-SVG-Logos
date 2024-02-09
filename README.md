@@ -6,6 +6,7 @@
   - [Usage](#usage)
   - [License](#license)
   - [Tests](#tests)
+  - [Video](#video)
   - [Questions](#questions)
   - [Mock-Up](#Mock-Up)
 ## Installation
@@ -33,6 +34,9 @@ The logo.svg file will be generated
 Navigate to the application's directory in a terminal or command prompt.
 
 Run 'npm test' to execute the test suite through Jest. Jest is configured to automatically find and run tests located in the project's test directories or files following naming conventions like *.test.js. The test results will be displayed in the terminal, indicating whether the tests passed or failed, along with any error messages for failures.
+
+## Video
+https://drive.google.com/file/d/1DXFwoPekBoC3xV4Aa9lSeIR-r4cE0AV3/view
 
 ## User Story
 ```
